@@ -112,7 +112,7 @@ public class UsuarioController {
 	public String setUpdateString(Usuario usuario) {
 		String QUERYupdateUser = "";
 		if (usuario != null) {
-			QUERYupdateUser += "update USUARIOS set ";
+			QUERYupdateUser += "update ebdb.usuarios set ";
 			if (usuario.getNombre_usuario() != null) {
 				QUERYupdateUser += "NOMBRE_USUARIO = " + "'" + usuario.getNombre_usuario() + "',";
 			}
